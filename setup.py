@@ -13,10 +13,10 @@ except ImportError:
 
 
 info = dict(
-  metadata     = dict(name="audio.bitstream"),
+  metadata     = dict(name="audio.bitstream", version="2"),
   code         = dict(packages=setuptools.find_packages()),
   data         = {},
-  requirements = dict(install_requires="bitstream"),
+  requirements = dict(install_requires="bitstream>=2"),
   scripts      = {},
   commands     = {},
   plugins      = {},

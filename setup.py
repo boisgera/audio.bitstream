@@ -11,12 +11,15 @@ except ImportError:
     error = "pip is not installed, refer to <{url}> for instructions."
     raise ImportError(error.format(url="http://pip.readthedocs.org"))
 
+metadata = {'name': 'audio.bitstream', 'version': '2.5.4'}
+requirements = \
+  {'install_requires': 'bitstream=={0}'.format(metadata['version'])}
 
 info = dict(
-  metadata     = dict(name="audio.bitstream", version="2"),
+  metadata     = metadata,
   code         = dict(packages=setuptools.find_packages()),
   data         = {},
-  requirements = dict(install_requires="bitstream>=2"),
+  requirements = requirements
   scripts      = {},
   commands     = {},
   plugins      = {},
